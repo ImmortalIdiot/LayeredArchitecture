@@ -1,9 +1,9 @@
 package infrastructure
 
-import domain.IProductRepository
+import domain.ProductRepository
 import domain.Product
 
-class InMemoryProductRepository : IProductRepository {
+class ProductRepositoryImpl : ProductRepository {
     private val products = mutableMapOf<String, Product>()
 
     override fun addProduct(product: Product) {

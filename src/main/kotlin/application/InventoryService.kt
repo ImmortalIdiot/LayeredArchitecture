@@ -1,11 +1,11 @@
 package application
 
-import domain.IProductRepository
+import domain.ProductRepository
 import domain.Product
 import domain.TemperatureMode
 import java.time.LocalDate
 
-class InventoryService(private val inventory: IProductRepository) {
+class InventoryService(private val inventory: ProductRepository) {
     fun addProduct(
         name: String, quantity: Int, expiry: LocalDate,
         temperatureMode: TemperatureMode,

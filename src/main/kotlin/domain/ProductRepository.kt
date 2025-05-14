@@ -1,6 +1,6 @@
 package domain
 
-interface IProductRepository {
+interface ProductRepository {
     fun addProduct(product: Product)
     fun getProduct(name: String): Product?
     fun getAllProducts(): List<Product>
